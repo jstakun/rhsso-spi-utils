@@ -32,6 +32,7 @@ public class MyOIDCAccessTokenResponseMapper extends AbstractOIDCProtocolMapper 
         OIDCAttributeMapperHelper.addIncludeInTokensConfig(configProperties, MyOIDCAccessTokenResponseMapper.class);
     }
 	
+	@Override
 	public AccessTokenResponse transformAccessTokenResponse(AccessTokenResponse accessTokenResponse, ProtocolMapperModel mappingModel,
             KeycloakSession session, UserSessionModel userSession, ClientSessionContext clientSessionCtx) {		
 	    logger.log(Level.INFO, "Transforming OIDC Access Token Response");	
